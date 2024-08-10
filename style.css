@@ -1,0 +1,1058 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ddd;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, #6AD569, #4CAF50);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.nav-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section {
+    background: linear-gradient(to right, #2c3e50, #4ca1af); /* Sleek gradient for the hero section */
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 5px solid #34495e; /* Stylish border at the bottom */
+}
+
+.hero-title {
+    font-size: 56px;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+}
+
+.hero-subtitle {
+    font-size: 28px;
+    margin: 20px 0 0;
+    font-weight: 400;
+}
+
+.section {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #2c3e50, #4ca1af); /* Gradient background */
+    color: #fff;
+    text-align: center;
+}
+
+.hero {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0 0 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Text shadow for emphasis */
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 0 0 30px;
+    font-weight: 400;
+}
+
+.cta {
+    display: inline-block;
+    padding: 12px 24px;
+    color: #fff;
+    background-color: #3498db;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.cta:hover {
+    background-color: #2980b9;
+    transform: translateY(-5px) scale(1.05); /* Slight lift and scale effect */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+}
+
+.btn-3d {
+    perspective: 1000px; /* Perspective for 3D effect */
+    position: relative;
+}
+
+.btn-3d::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Subtle highlight for 3D effect */
+    transform: translateZ(10px);
+    transition: opacity 0.3s;
+    z-index: -1;
+}
+
+.btn-3d:hover::before {
+    opacity: 0; /* Hide highlight on hover */
+}
+
+
+
+
+
+
+
+
+/* Projects Section */ 
+.projects-container { 
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+} 
+ 
+.project-box { 
+    background-color: #0a86a5; 
+    padding: 20px; 
+    width: 30%; 
+    margin: 10px; 
+    text-align: center; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s; 
+} 
+ 
+.project-box:hover { 
+    transform: translateY(-10px); 
+} 
+ 
+.project-box h3 { 
+    margin-bottom: 15px; 
+    color: #2980b9; 
+}
+
+
+
+.section {
+    padding: 60px 20px;
+    background: #fff0f0; /* Light background for contrast */
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase; /* Adds a premium feel */
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Allows boxes to wrap on smaller screens */
+}
+
+.project-box {
+    width: 300px;
+    padding: 20px;
+    background: #999999;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    perspective: 1000px; /* Perspective for 3D effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-box:hover {
+    transform: translateY(-10px) rotateY(5deg); /* Adds lift and slight rotation */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    background-color: #ffffff; /* Subtle background change */
+}
+
+.project-box h3 {
+    font-size: 24px;
+    margin: 0 0 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+.project-box p {
+    font-size: 16px;
+    margin: 0;
+    color: #666;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; /* Using a stylish font */
+}
+.projects-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.project-box {
+    display: block;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.project-box p {
+    font-size: 14px;
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.project-box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.project-box p {
+    font-size: 14px;
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.project-box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.project-box p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.project-box button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.project-box button:hover {
+    background-color: #555;
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-box button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.project-box button:hover {
+    background-color: #555;
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-box h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.project-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-box img:hover {
+    transform: scale(1.05);
+}
+
+.project-box p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.project-box button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.project-box button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+   justify-content: end;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f0a500;
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+}
+
+
+.project-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-box img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #f0a500;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: end;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* Box shadow for navbar */
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2); /* Box shadow for buttons */
+}
+
+.nav-link:hover {
+    background-color: #f0a500; /* Highlight color */
+    color: #fffdfd;
+    transform: translateY(-3px); /* 3D effect */
+    box-shadow: 0 4px 8px rgba(251, 248, 248, 0.4); /* Enhanced shadow on hover */
+}
+
+
+
+
+/* Hero Section Styles */
+.hero-section {
+    background: url('Build.jpg') no-repeat center center/cover; /* Use the actual path to your image */
+    height: 50vh; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow inside the element */
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay for additional shadow effect */
+    z-index: 1;
+}
+
+
+.hero-content {
+    z-index: 1; /* Ensure content is above the image */
+    position: relative; /* Ensure content is positioned above the image */
+    padding: 0 20px; /* Optional: Add padding for better text placement */
+}
+.hero-title {
+    font-size: 4rem; /* Larger font size for impact */
+    font-weight: 700; /* Bold font for emphasis */
+    margin: 0;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* More pronounced shadow for a floating effect */
+    letter-spacing: 2px; /* Increased letter spacing for elegance */
+    line-height: 1.2; /* Adjust line height for better readability */
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-family: 'Roboto', sans-serif; /* Use a premium font */
+}
+
+.hero-subtitle {
+    font-size: 1.75rem; /* Slightly larger than typical subtitle */
+    font-weight: 400; /* Regular weight for contrast */
+    margin: 10px 0 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Subtle shadow for a premium feel */
+    letter-spacing: 1.5px; /* Slightly increased letter spacing */
+    line-height: 1.4; /* Adjust line height for readability */
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-family: 'Roboto', sans-serif; /* Use a premium font */
+}
+
+/* Hover Effect for Premium Look */
+.hero-title:hover, .hero-subtitle:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    color: #f0a500; /* Premium color */
+}
+
+
+
+/* General section styling */
+.section {
+    padding: 50px 20px;
+    background: #f0f0f0; /* Light background color */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Header styling */
+#services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+
+/* Header text shadow */
+#services h2::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%) scale(1.1);
+    z-index: -1;
+    border-radius: 5px;
+}
+
+/* Container styling */
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual service box styling */
+.service-box {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Service box hover effect */
+.service-box:hover {
+    transform: translateY(-10px) scale(1.05); /* Slight lift and scale */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Adding gradient overlay */
+.service-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    z-index: -1;
+    transition: opacity 0.3s;
+}
+
+/* Fade effect on hover */
+.service-box:hover::before {
+    opacity: 0; /* Hide gradient overlay on hover */
+}
+
+/* Service box heading and paragraph styling */
+.service-box h3 {
+    margin-top: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.service-box p {
+    color: #666;
+    margin-bottom: 0;
+}
+/* General section styling */
+.section {
+    padding: 50px 20px;
+    background: #f9f9f9; /* Light background color */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Header styling */
+#projects h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+/* Container styling */
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: hidden; /* Ensure that no overflow content is visible */
+}
+
+/* Individual project box styling */
+.project-box {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    will-change: transform;
+}
+
+/* Slide effect on hover */
+.project-box:hover {
+    transform: translateY(-10px) scale(1.05); /* Slight lift and scale */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Image styling */
+.project-box img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Slide effect on image hover */
+.project-box:hover img {
+    transform: scale(1.1); /* Slightly enlarge image on hover */
+}
+
+/* Project box heading and paragraph styling */
+.project-box h3 {
+    margin-top: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.project-box p {
+    color: #666;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+
+/* General section styling */
+.section {
+    padding: 50px 20px;
+    background: linear-gradient(to bottom right, #e0e0e0, #ffffff); /* Premium gradient background */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Header styling */
+#services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+/* Container styling */
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual service box styling */
+.service-box {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Service box hover effect */
+.service-box:hover {
+    transform: translateY(-10px) scale(1.05); /* Slight lift and scale */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #f39c12; /* Premium color */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #e67e22; /* Slightly darker color on hover */
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Service box heading and paragraph styling */
+.service-box h3 {
+    margin-top: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.service-box p {
+    color: #666;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styles */
+#contact {
+    background: linear-gradient(45deg, #2c3e50, #4ca1af);
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+    border-top: 2px solid #4ca1af;
+}
+
+#contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#contact p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+#contact a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color: #d1e8e2;
+}
+
+#contact p:last-child {
+    margin-top: 30px;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 20px;
+    opacity: 0.8;
+}
+
+/* Footer styling */
+#contact {
+    background: #333; /* Dark background for contrast */
+    color: #ffffff; /* Light text color */
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 5px solid #f39c12; /* Stylish border for emphasis */
+    position: relative;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Footer heading styling */
+#contact h2 {
+    margin-top: 0;
+    font-size: 2em;
+    font-weight: bold;
+    color: #f39c12; /* Accent color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow for 3D effect */
+}
+
+/* Footer paragraph styling */
+#contact p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #f0f0f0;
+}
+
+#contact a {
+    color: #f39c12; /* Accent color for links */
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+#contact a:hover {
+    color: #ffffff; /* Change link color on hover */
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.5); /* Enhanced shadow effect */
+}
+
+/* Footer box shadow and gradient effect */
+#contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1); /* Subtle gradient overlay */
+    z-index: -1;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3); /* Inner shadow for depth */
+}
+
+
+
